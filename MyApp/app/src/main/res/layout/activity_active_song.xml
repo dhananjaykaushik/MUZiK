@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/gg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tempbackground">
+
+    <ImageView
+        android:id="@+id/activeSongAlbumArt"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_above="@+id/activeSongSongName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/noalbumart" />
+
+    <TextView
+        android:id="@+id/activeSongSongName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/activeSongAlbumArt"
+        android:layout_alignStart="@+id/activeSongAlbumArt"
+        android:layout_centerVertical="true"
+        android:lines="1"
+        android:paddingStart="2dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/activeSongArtistName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/activeSongSongName"
+        android:layout_alignStart="@+id/activeSongSongName"
+        android:layout_below="@+id/activeSongSongName"
+        android:lines="1"
+        android:paddingStart="2dp"
+        android:paddingTop="2dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@android:color/white" />
+
+    <SeekBar
+        android:id="@+id/activeSongSeekBar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activeSongArtistName"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:progressTint="@color/red"
+        android:progressBackgroundTint="@color/black"
+        android:progressTintMode="multiply"
+        android:thumbTint="@color/white"
+
+        />
+
+    <ImageButton
+        android:id="@+id/aplpaButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/activeSongSeekBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:background="@android:drawable/ic_media_pause" />
+
+    <ImageButton
+        android:id="@+id/anextButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/aplpaButton"
+        android:layout_marginStart="11dp"
+        android:layout_toEndOf="@+id/aplpaButton"
+        android:background="@android:drawable/ic_media_next" />
+
+    <ImageButton
+        android:id="@+id/aprevButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/aplpaButton"
+        android:layout_marginEnd="10dp"
+        android:layout_toStartOf="@+id/aplpaButton"
+        android:background="@android:drawable/ic_media_previous" />
+
+    <TextView
+        android:id="@+id/curSeek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/activeSongSeekBar"
+        android:layout_below="@+id/activeSongSeekBar"
+        android:layout_marginStart="14dp"
+        android:text="2:10"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/totDur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/activeSongSeekBar"
+        android:layout_below="@+id/activeSongSeekBar"
+        android:layout_marginEnd="14dp"
+        android:text="4:52"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+
+    <ImageButton
+        android:id="@+id/shuffbtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/curSeek"
+        android:layout_alignTop="@+id/aprevButton"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/noshuffle" />
+
+    <ImageButton
+        android:id="@+id/repbtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignEnd="@+id/totDur"
+        android:layout_alignTop="@+id/anextButton"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/repnone" />
+
+</RelativeLayout>

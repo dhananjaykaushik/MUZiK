@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1b2432</color>
+    <color name="colorPrimaryDark">#161b3d</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="orange">#FF4500</color>
+    <color name="blue">#0000FF</color>
+    <color name="red">#FF0000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="davygray">#565254</color>
+    <color name="trolleydgray">#7A7D7D</color>
+    <color name="temp">#1b2432</color>
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomPlayerRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/temp"
+    android:backgroundTint="@color/temp">
+
+    <ImageView
+        android:id="@+id/bottomPlayerAlbumArt"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="2dp"
+        android:layout_x="2dp"
+        android:layout_y="2dp"
+        android:adjustViewBounds="true"
+        android:background="@mipmap/ic_launcher"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/sname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/bottomPlayerAlbumArt"
+        android:maxEms="18"
+        android:maxLength="18"
+        android:paddingStart="5dp"
+        android:paddingTop="2dp"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/artistname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sname"
+        android:layout_toEndOf="@+id/bottomPlayerAlbumArt"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="left"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:maxEms="15"
+        android:maxLength="15"
+        android:paddingStart="5dp"
+        android:paddingTop="3dp"
+        android:textColor="@android:color/white"
+        android:textSize="10sp" />
+
+    <ImageButton
+        android:id="@+id/nextButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/bottomPlayerAlbumArt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="15dp"
+        android:background="@android:drawable/ic_media_next"
+        android:text="Button" />
+
+    <ImageButton
+        android:id="@+id/playPauseButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/nextButton"
+        android:layout_marginRight="5dp"
+        android:layout_toStartOf="@+id/nextButton"
+        android:background="@android:drawable/ic_media_play"
+        android:text="Button" />
+
+    <ImageButton
+        android:id="@+id/previousButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/playPauseButton"
+        android:layout_marginRight="5dp"
+        android:layout_toStartOf="@+id/playPauseButton"
+        android:adjustViewBounds="false"
+        android:background="@android:drawable/ic_media_previous"
+        android:cropToPadding="false"
+        android:text="Button" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray" />
+
+</RelativeLayout>
